@@ -1,0 +1,122 @@
+header {
+  height: 75px;
+  background-color: lightcoral;
+  text-align: center;
+}
+
+section.header {
+  outline: 1px solid black;
+  height: 75px;
+}
+
+section#left-box {
+  height: 150px;
+  background-color: aquamarine;
+  outline: 1px solid black;
+}
+
+section.big {
+  height: 125px;
+  background-color: lightskyblue;
+  outline: 1px solid black;
+}
+
+section.square-left {
+  width: 50%;
+  height: 250px;
+  background-color: lightcoral;
+  display: inline-block;
+  outline: 1px solid black;
+}
+
+section.square-right {
+  width: 50%;
+  height: 250px;
+  background-color: lightblue;
+  float: right;
+  outline: 1px solid black;
+}
+
+section.footer {
+  background-color: chartreuse;
+  height: 80px;
+  outline: 1px solid black;
+}
+
+@media only screen and (min-width: 960px) {
+  header {
+    outline: 1px solid black;
+    text-align: center;
+    background-color: gray;
+    height: 100px;
+  }
+
+  section#left-box {
+    float: left;
+    height: 600px;
+    width: 20%;
+    outline: 1px solid black;
+  }
+
+  section#left-box:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  div.main-section-div:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  div.main-section-div {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  section.big {
+    width: 40%;
+    height: 200px;
+    display: inline-block;
+    outline: 1px solid black;
+  }
+
+  section#left-rect {
+    float: left;
+  }
+
+  section#right-rect {
+    float: right;
+  }
+
+  section.square-left {
+    width: 20%;
+    outline: 1px solid black;
+  }
+
+  section.square-right {
+    width: 20%;
+    outline: 1px solid black;
+  }
+
+  section#e {
+    float: left;
+  }
+
+  section#f {
+    float: left;
+  }
+
+  section.footer {
+    width: 80%;
+    right: 0;
+    margin-left: 20%;
+    height: 150px;
+    background-color: chartreuse;
+    outline: 1px solid black;
+  }
+}
